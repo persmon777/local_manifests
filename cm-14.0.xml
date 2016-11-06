@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!--Debloat-->
+
+  <!--AOSP-->
+  <remove-project name="device/generic/arm64" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="platform/hardware/intel/audio_media" />
+  <remove-project name="platform/hardware/intel/bootstub" />
+  <remove-project name="platform/hardware/intel/common/bd_prov" />
+  <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+  <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+  <remove-project name="platform/hardware/intel/sensors" />
+  <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86"/>
+  <remove-project name="platform/prebuilts/go/darwin-x86"/>
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5"/>
+  <remove-project name="platform/prebuilts/ninja/darwin-x86"/>
+  <!--AOSP-->
+
+  <!--CyanogenMod-->
+  <remove-project name="CyanogenMod/android_hardware_intel_common_libmix" />
+  <remove-project name="CyanogenMod/android_hardware_intel_common_libva" />
+  <remove-project name="CyanogenMod/android_hardware_intel_common_libwsbm" />
+  <remove-project name="CyanogenMod/android_hardware_intel_common_omx-components" />
+  <remove-project name="CyanogenMod/android_hardware_intel_common_utils" />
+  <remove-project name="CyanogenMod/android_hardware_intel_img_hwcomposer" />
+  <remove-project name="CyanogenMod/android_hardware_intel_img_psb_headers" />
+  <remove-project name="CyanogenMod/android_hardware_intel_img_psb_video" />
+  <remove-project name="CyanogenMod/android_packages_apps_TV" />
+  <remove-project name="CyanogenMod/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9"/>
+  <remove-project name="CyanogenMod/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9"/>
+  <remove-project name="CyanogenMod/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9"/>
+  <remove-project name="CyanogenMod/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9"/>
+  <remove-project name="CyanogenMod/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9"/>
+  <!--CyanogenMod-->
+
+<!-- Debloat -->
+
+  <!-- Nougat -->
+  <project path="device/lge/jag3gds" name="persmon777/android_device_lge_jag3gds" remote="github" revision="cm-14.0" />
+  <project path="device/lge/msm8226-common" name="persmon777/android_device_lge_msm8226-common" remote="github" revision="cm-14.0" />
+  <project path="vendor/lge" name="persmon777/proprietary_vendor_lge" remote="github" revision="cm-14.0" />
+  <project path="manifests" name="persmon777/local_manifests" remote="github" revision="cm-14.0" />
+  <!-- Nougat -->
+  
+  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="staging/cm-14.0" />
+  <project path="kernel/lge/msm8226" name="CyanogenMod/android_kernel_lge_msm8226" remote="github" revision="cm-14.0" />
+  <project path="external/sony/boringssl-compat" name="CyanogenMod/android_external_sony_boringssl-compat" remote="github" revision="cm-14.0" />
+
+</manifest>
